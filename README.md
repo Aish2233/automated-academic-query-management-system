@@ -33,11 +33,11 @@ git clone
 cd automated-academic-query-system
 ```
 
-### Configure the Database:
+## Configure the Database:
 - Set up a MySQL database and update the database configuration in the project files.
 - You may need to configure the connection details (username, password) in the JDBC connection file.
 
-### Install Drools:
+## Install Drools:
 - Download and install the Drools engine by adding the Drools dependencies to the `pom.xml` file (Maven):
 ```xml
 <dependency>
@@ -52,13 +52,13 @@ cd automated-academic-query-system
 </dependency>
 ```
 
-### Build the Project:
+## Build the Project:
 Use Maven to install the necessary dependencies and build the project:
 
 mvn clean install
 ```
 
-### Run the Application:
+## Run the Application:
 Once the dependencies are set up and the database is configured, you can run the project through your IDE or via the command line:
 
 java -jar target/automated-academic-query-system.jar
