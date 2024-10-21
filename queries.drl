@@ -1,0 +1,49 @@
+package com.academic.querysystem.rules;
+
+
+import com.academic.querysystem.UserQuery;
+
+
+rule "Check Library Hours"
+when
+    q : UserQuery(queryText matches ".*[Ll]ibrary.*[Hh]ours.*")
+then
+    q.setResponse("Library hours are 9 AM to 4 PM");
+end
+
+rule "Check Course Availability"
+when
+    q : UserQuery(queryText matches ".*[Cc]ourse.*[Aa]vailability.*")
+then
+    q.setResponse("Available courses include: Course A, Course B, Course C.");
+end
+
+rule "Check Exam Schedule"
+when
+    q : UserQuery(queryText matches ".*[Ee]xam.*[Ss]chedule.*")
+then
+    q.setResponse("The next exams are scheduled for next week on Wednesday and Friday. Dates willbe announced soon.");
+end
+
+rule "Check Assignment Deadlines"
+when
+    q : UserQuery(queryText matches ".*[Aa]ssignment.*[Dd]eadline.*")
+then
+    q.setResponse("The upcoming assignment deadlines are: Assignment 1 - October 25, Assignment 2 - November 1.");
+end
+
+rule "Check Registration Dates"
+when
+    q : UserQuery(queryText matches ".*[Rr]egistration.*[Dd]ates.*")
+then
+    q.setResponse("Registration for the next semester opens on November 1 and closes on November 30.");
+end
+
+rule "Check Library Services"
+when
+    q : UserQuery(queryText matches ".*[Ll]ibrary.*[Ss]ervices.*")
+then
+    q.setResponse("Library services include book lending, research assistance, and study rooms.");
+end
+
+
