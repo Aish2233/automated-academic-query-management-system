@@ -66,6 +66,6 @@ java -jar target/automated-academic-query-system.jar
 
 ## Usage
 
-- **Student Interface**: Allows students to submit academic queries, check responses, and track the progress of their queries.
+- **Student Interface**: Allows students to submit academic queries, check responses.
 - **Admin Interface**: Enables admins to manage incoming queries, monitor responses, and define rules in the Drools-based system for automated query handling.
 - **Automated Query Processing**: The system processes and resolves queries based on predefined rules, providing quick and accurate responses without manual intervention.
