@@ -27,11 +27,11 @@ To run this project, you will need:
 
 ## Installation and Setup
 
-### Clone the Repository:
+## Clone the Repository:
 
 git clone 
 cd automated-academic-query-system
-```
+
 
 ## Configure the Database:
 - Set up a MySQL database and update the database configuration in the project files.
@@ -56,13 +56,13 @@ cd automated-academic-query-system
 Use Maven to install the necessary dependencies and build the project:
 
 mvn clean install
-```
+
 
 ## Run the Application:
 Once the dependencies are set up and the database is configured, you can run the project through your IDE or via the command line:
 
 java -jar target/automated-academic-query-system.jar
-```
+
 
 ## Usage
 
